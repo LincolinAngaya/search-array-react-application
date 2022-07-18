@@ -579,5 +579,12 @@ export const Users = [{
         "email": "cexall2a@go.com",
         "gender": "Male",
     },
+    {
+        "id": 84,
+        "first_name": "lincolin",
+        "last_name": "Angaya",
+        "email": "lincolinangaya5626@gmail.com",
+        "gender": "Male",
+    },
 
 ]
