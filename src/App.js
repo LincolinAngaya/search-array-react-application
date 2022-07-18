@@ -5,7 +5,9 @@ import Table from './Table';
 function App() {
   const [query, setQuery] = useState("");
   const search =(user) => {
-   return user.filter(user => user.first_name.toLowerCase().includes(query))
+   return user.filter(user => user.first_name.toLowerCase().includes(query) 
+   ||user.email.toLowerCase().includes(query)
+   ||user.last_name.toLowerCase().includes(query))
   }
   return (
     <div className="app">
