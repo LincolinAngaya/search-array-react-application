@@ -1,7 +1,7 @@
 import './index.css'
 import { Users } from './User';
 import { useState } from 'react';
-
+import Table from './Table';
 function App() {
   const [query, setQuery] = useState("");
 
@@ -12,13 +12,7 @@ function App() {
          className="search" 
          onChange={(e) => setQuery(e.target.value)}
        />
-      <ul className="list">
-{Users.filter((user) => user.first_name.toLowerCase().includes(query))
-.map((user) =>(
-    <li key ={user.id}className="listItem">{user.first_name}</li>
-))}
-        
-      </ul>
+     <Table  user={Users}/>
     </div>
   );
 }
