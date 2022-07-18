@@ -4,7 +4,9 @@ import { useState } from 'react';
 import Table from './Table';
 function App() {
   const [query, setQuery] = useState("");
-
+  const search =(user) => {
+   return user.filter(user => user.first_name.toLowerCase().includes(query))
+  }
   return (
     <div className="app">
       <input type="text"
@@ -12,7 +14,7 @@ function App() {
          className="search" 
          onChange={(e) => setQuery(e.target.value)}
        />
-     <Table  user={Users}/>
+     <Table  user={search(Users)}/>
     </div>
   );
 }

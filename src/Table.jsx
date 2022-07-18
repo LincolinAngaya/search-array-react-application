@@ -8,13 +8,15 @@ const Table = ({user}) => {
                 <th>Name</th>
                 <th>Surname</th>
                 <th>Email</th>
+                <th>Gender</th>
             </tr>
            {user.map((user) =>(
     
             <tr key ={user.id}>
             <td>{user.first_name}</td>
-            <td>{}</td>
-            <td>{}</td>
+            <td>{user.last_name}</td>
+            <td>{user.email}</td>
+            <td>{user.gender}</td>
              
             </tr>
           ))}   
