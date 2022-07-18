@@ -8,7 +8,7 @@ const Table = ({user}) => {
                 <th>Name</th>
                 <th>Surname</th>
                 <th>Email</th>
-                <th>Gender</th>
+               
             </tr>
            {user.map((user) =>(
     
@@ -16,7 +16,7 @@ const Table = ({user}) => {
             <td>{user.first_name}</td>
             <td>{user.last_name}</td>
             <td>{user.email}</td>
-            <td>{user.gender}</td>
+          
              
             </tr>
           ))}   
